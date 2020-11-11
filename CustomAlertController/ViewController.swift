@@ -12,9 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+     
+        
+    
     }
 
-
+    @IBAction func buttonPressed(_ sender: Any) {
+       
+        
+        CustomAlertController.showSimpleAlert(parentVC: self, alertViewBackgroundColor: .red, titleViewBackgroundColor: .black, textColor: .white, title: "Info", titleAlignment: .center, titleFontSize: 18)
+           
+    }
+    
 }
 
